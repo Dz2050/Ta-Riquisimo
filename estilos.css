@@ -1,0 +1,122 @@
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    background-image: url('./imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #010202;
+  }
+
+  h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #010202;
+  }
+
+  p {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    background: #52f37a;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 20px 0 20px;
+  }
+  
+.whatsapp {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #25d366;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#contacto {
+text-align: center;
+}
+  
+footer {
+text-align: center;
+padding: 1rem;
+background-color: #2a9d8f;
+color: white;
+}
+  
+@media (max-width: 768px) {
+    #header {
+      height: 200px;
+      background-size: cover;
+    }
+  
+    #header h1 {
+      font-size: 2rem;
+    }
+
+    .producto {
+        width: calc(50% - 1rem);
+      }
+
+    body {
+        font-size: 14px;
+    }
+    
+      p, h1, h2 {
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      .whatsapp {
+        width: 90%;
+        text-align: center;
+      }
+}
